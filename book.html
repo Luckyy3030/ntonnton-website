@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Kota - Ntonnton Kota Shop</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="book.html">Book online</a>
+            <a href="register.html">Register</a>
+            <a href="inquiries.html">Inquiries</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="team.html">team</a>
+        </nav>
+    </header>
+
+    <!-- Booking Form -->
+    <h1>Book Your food Online</h1>
+    <p>
+        Want to skip the wait? Place your order online and 
+        pick it up at Ntonnton Kota Shop in Polokwane. 
+        Fill in your details below and we’ll have your meal ready for you.
+    </p>
+
+    <form action="#" method="post">
+        <table>
+            <!-- Customer Name -->
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+            </tr>
+
+            <!-- Phone -->
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" required></td>
+            </tr>
+
+            <!-- Menu Selection -->
+            <tr>
+                <td><label for="Menu">Choose Your food:</label></td>
+                <td>
+                    <select id="menu" name="menu" required>
+                        <option value="">-- Select Menu --</option>
+                        <option value="full_house">Full House Kota</option>
+                        <option value="Magwinya">Magwinya</option>
+                        <option value="Pap and meat">Pap and meat</option>
+                        <option value="Cold drinks">Cold drinks</option>
+                        <option value="custom">Custom Kota</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Quantity -->
+            <tr>
+                <td><label for="quantity">Quantity:</label></td>
+                <td><input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required></td>
+            </tr>
+
+            <!-- Pickup Time -->
+            <tr>
+                <td><label for="time">Preferred Pickup Time:</label></td>
+                <td><input type="time" id="time" name="time" required></td>
+            </tr>
+
+            <!-- Special Requests -->
+            <tr>
+                <td><label for="requests">Special Requests:</label></td>
+                <td><textarea id="requests" name="requests" rows="4" cols="25" placeholder="e.g. Extra cheese, no tomato..."></textarea></td>
+            </tr>
+
+            <!-- Submit -->
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Place Order"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
